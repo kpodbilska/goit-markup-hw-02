@@ -1,5 +1,6 @@
 :root {
-  --main-font: "Roboto" "Raleway", sans-serif;
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
   --main-color: #212121;
 }
 
@@ -11,16 +12,16 @@ body {
 }
 
 .webstudio1 {
-  position: absolute;
   width: 145px;
   height: 31px;
   left: 215px;
   top: 24px;
 
-  font-family: Raleway;
+  font-family: var(--secondary-font);
   font-weight: 700px;
   font-size: 26px;
   line-height: 31px;
+  text-decoration: none;
   /* identical to box height */
 
   letter-spacing: 0.03em;
@@ -36,7 +37,6 @@ body {
 }
 
 .agencja {
-  position: absolute;
   width: 53px;
   height: 16px;
   left: 453px;
@@ -45,11 +45,16 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
+  text-decoration: none;
   letter-spacing: 0.02em;
+  color: black;
+}
+
+.agencja:hover{
+  color: #2196F3;
 }
 
 .portfolio {
-  position: absolute;
   width: 58px;
   height: 16px;
   left: 552px;
@@ -58,11 +63,16 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
+  text-decoration: none;
   letter-spacing: 0.02em;
+  color: black;
+}
+
+.portfolio:hover{
+  color: #2196F3;
 }
 
 .kontakt {
-  position: absolute;
   width: 58px;
   height: 16px;
   left: 656px;
@@ -71,11 +81,144 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
+  text-decoration: none;
   letter-spacing: 0.02em;
+  color: black;
+}
+
+.kontakt:hover{
+  color: #2196F3;
+}
+
+.efektywne-rozwiazania-background{
+  width: 1600px;
+height: 600px;
+left: 0px;
+top: 80px;
+
+background: #2F303A;
+}
+
+.efektywne-rozwiazania{
+  position: relative;
+  width: 696px;
+height: 120px;
+left: 452px;
+top: 200px;
+
+font-family: var(--main-font);
+font-style: normal;
+font-weight: 900;
+font-size: 44px;
+line-height: 60px;
+/* or 136% */
+
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+
+.button-zamow-usluge{
+  position: relative;
+width: 200px;
+height: 50px;
+left: 700px;
+top: 220px;
+
+background: #2196F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+
+font-family: var(--main-font);
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 30px;
+/* identical to box height, or 187% */
+
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+  cursor: pointer;
+
+color: #FFFFFF;
+
+}
+
+.button-zamow-usluge:hover{
+  background: #2196f3;
+  /* shadow-middle */
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.thead{
+  font-family: var(--main-font);
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: #212121;
+}
+
+.tbody{
+  font-family: var(--main-font);
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+/* or 171% */
+
+letter-spacing: 0.03em;
+
+color: #757575;
+}
+
+.nasz-zespol{
+  background: #F5F4FA;
+}
+
+.lista{
+  list-style-type: none;
+}
+
+.nazwisko{
+  font-family: var(--main-font);
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+text-align: center;
+letter-spacing: 0.03em;
+
+color: #212121;
+}
+
+.stanowisko{
+  font-family: var(--main-font);
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+text-align: center;
+letter-spacing: 0.03em;
+
+color: #757575;
 }
 
 .email1 {
-  position: absolute;
   width: 135px;
   height: 16px;
   left: 1078px;
@@ -84,13 +227,17 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
+  text-decoration: none;
   letter-spacing: 0.02em;
 
   color: #757575;
 }
 
+.email1:hover{
+  color: #2196F3;
+}
+
 .tel1 {
-  position: absolute;
   width: 110px;
   height: 16px;
   left: 1263px;
@@ -99,13 +246,17 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
+  text-decoration: none;
   letter-spacing: 0.02em;
 
   color: #757575;
 }
 
+.tel1:hover{
+  color: #2196F3;
+}
+
 .button-wszystkie {
-  position: absolute;
   width: 121px;
   height: 38px;
   left: 510px;
@@ -137,7 +288,6 @@ body {
 }
 
 .button-strony {
-  position: absolute;
   width: 93px;
   height: 38px;
   left: 639px;
@@ -167,7 +317,6 @@ body {
 }
 
 .button-aplikacje {
-  position: absolute;
   width: 114px;
   height: 38px;
   left: 740px;
@@ -197,7 +346,6 @@ body {
 }
 
 .button-dizajn {
-  position: absolute;
   width: 91px;
   height: 38px;
   left: 862px;
@@ -227,7 +375,6 @@ body {
 }
 
 .button-marketing {
-  position: absolute;
   width: 121px;
   height: 38px;
   left: 961px;
@@ -257,7 +404,6 @@ body {
 }
 
 .tytul1 {
-  position: absolute;
   width: 322px;
   height: 36px;
   left: 239px;
@@ -271,7 +417,6 @@ body {
 }
 
 .tytul2 {
-  position: absolute;
   width: 322px;
   height: 36px;
   left: 639px;
@@ -285,7 +430,6 @@ body {
 }
 
 .tytul3 {
-  position: absolute;
   width: 322px;
   height: 36px;
   left: 1039px;
@@ -299,7 +443,6 @@ body {
 }
 
 .tytul4 {
-  position: absolute;
   width: 322px;
   height: 36px;
   left: 239px;
@@ -313,7 +456,6 @@ body {
 }
 
 .tytul5 {
-  position: absolute;
   width: 322px;
   height: 36px;
   left: 639px;
@@ -327,7 +469,6 @@ body {
 }
 
 .tytul6 {
-  position: absolute;
   width: 322px;
   height: 36px;
   left: 1039px;
@@ -341,7 +482,6 @@ body {
 }
 
 .tytul7 {
-  position: absolute;
   width: 322px;
   height: 36px;
   left: 239px;
@@ -355,7 +495,6 @@ body {
 }
 
 .tytul8 {
-  position: absolute;
   width: 322px;
   height: 36px;
   left: 639px;
@@ -369,7 +508,6 @@ body {
 }
 
 .tytul9 {
-  position: absolute;
   width: 322px;
   height: 36px;
   left: 1039px;
@@ -383,7 +521,6 @@ body {
 }
 
 .podtytul1 {
-  position: absolute;
   width: 322px;
   height: 30px;
   left: 239px;
@@ -400,7 +537,6 @@ body {
 }
 
 .podtytul2 {
-  position: absolute;
   width: 322px;
   height: 30px;
   left: 639px;
@@ -417,7 +553,6 @@ body {
 }
 
 .podtytul3 {
-  position: absolute;
   width: 322px;
   height: 30px;
   left: 1039px;
@@ -434,7 +569,6 @@ body {
 }
 
 .podtytul4 {
-  position: absolute;
   width: 322px;
   height: 30px;
   left: 239px;
@@ -451,7 +585,6 @@ body {
 }
 
 .podtytul5 {
-  position: absolute;
   width: 322px;
   height: 30px;
   left: 639px;
@@ -468,7 +601,6 @@ body {
 }
 
 .podtytul6 {
-  position: absolute;
   width: 322px;
   height: 30px;
   left: 1039px;
@@ -485,7 +617,6 @@ body {
 }
 
 .podtytul7 {
-  position: absolute;
   width: 322px;
   height: 30px;
   left: 239px;
@@ -502,7 +633,6 @@ body {
 }
 
 .podtytul8 {
-  position: absolute;
   width: 322px;
   height: 30px;
   left: 639px;
@@ -519,7 +649,6 @@ body {
 }
 
 .podtytul9 {
-  position: absolute;
   width: 322px;
   height: 30px;
   left: 1039px;
@@ -536,7 +665,6 @@ body {
 }
 
 .technocrack {
-  position: absolute;
   width: 370px;
   height: 294px;
   left: 215px;
@@ -544,7 +672,6 @@ body {
 }
 
 .grafika {
-  position: absolute;
   width: 370px;
   height: 294px;
   left: 615px;
@@ -552,7 +679,6 @@ body {
 }
 
 .restauracja {
-  position: absolute;
   width: 370px;
   height: 294px;
   left: 1015px;
@@ -560,7 +686,6 @@ body {
 }
 
 .projekt-prime {
-  position: absolute;
   width: 370px;
   height: 294px;
   left: 215px;
@@ -568,7 +693,6 @@ body {
 }
 
 .projekt-boxes {
-  position: absolute;
   width: 370px;
   height: 294px;
   left: 615px;
@@ -576,7 +700,6 @@ body {
 }
 
 .inspiration {
-  position: absolute;
   width: 370px;
   height: 294px;
   left: 1015px;
@@ -584,7 +707,6 @@ body {
 }
 
 .magazyn {
-  position: absolute;
   width: 370px;
   height: 294px;
   left: 215px;
@@ -592,7 +714,6 @@ body {
 }
 
 .projekt-lab {
-  position: absolute;
   width: 370px;
   height: 294px;
   left: 615px;
@@ -600,7 +721,6 @@ body {
 }
 
 .growing {
-  position: absolute;
   width: 370px;
   height: 294px;
   left: 1015px;
@@ -608,7 +728,6 @@ body {
 }
 
 .footer {
-  position: absolute;
   width: 1600px;
   height: 252px;
   left: 0px;
@@ -617,15 +736,16 @@ body {
 }
 
 .webstudio2 {
-  position: relative;
+  position: flex;
   width: 145px;
   height: 31px;
   left: 215px;
   top: 60px;
 
-  font-family: Raleway;
+  font-family: var(--secondary-font);
   font-weight: 700px;
   font-size: 26px;
+  text-decoration: none;
   line-height: 31px;
   /* identical to box height */
 
@@ -635,7 +755,6 @@ body {
 }
 
 .adres {
-  position: absolute;
   width: 247px;
   height: 21px;
   left: 215px;
@@ -652,7 +771,6 @@ body {
 }
 
 .email2 {
-  position: absolute;
   width: 231px;
   height: 21px;
   left: 215px;
@@ -664,13 +782,16 @@ body {
   /* or 171% */
 
   letter-spacing: 0.03em;
-  text-decoration-line: underline;
+  text-decoration-line: none;
 
   color: rgba(255, 255, 255, 0.6);
 }
 
+.email2:hover{
+  color: #2196F3;
+}
+
 .tel2 {
-  position: absolute;
   width: 231px;
   height: 21px;
   left: 215px;
@@ -679,9 +800,14 @@ body {
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
+  text-decoration: none;
   /* or 171% */
 
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
+}
+
+.tel2:hover{
+  color: #2196F3;
 }
